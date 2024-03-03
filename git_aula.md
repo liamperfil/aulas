@@ -18,7 +18,7 @@ git push origin main
 git push origin main
 
 
-### Atualizar os repositórios:
+### Atualizar os repositórios locais:
 cd seu_repositorio
 git pull origin main
 
