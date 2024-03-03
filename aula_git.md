@@ -14,43 +14,43 @@ git commit -m "Sua mensagem de commit"
 git push origin main
 
 
-## Enviar alterações para o GitHub:
+### Enviar alterações para o GitHub:
 git push origin main
 
 
-## Atualizar os repositórios:
+### Atualizar os repositórios:
 cd seu_repositorio
 git pull origin main
 
 
-## Inicialize um repositório Git na pasta local: Se você ainda não iniciou um repositório Git na sua pasta local, faça isso usando o comando git init:
+### Inicialize um repositório Git na pasta local: Se você ainda não iniciou um repositório Git na sua pasta local, faça isso usando o comando git init:
 cd caminho/para/sua/pasta
 git init
 
 
-## Clonando repositório privado
+### Clonando repositório privado
 git clone https://seu_token@github.com/seu_usuario/seu_repositorio.git
 
 
-## Clonando repositório público
+### Clonando repositório público
 git clone https://github.com/seu_usuario/seu_repositorio.git
 
 
-## se já estiver trabalhando em um repositório existente, altere a URL do repositório remoto usando:
+### se já estiver trabalhando em um repositório existente, altere a URL do repositório remoto usando:
 git remote set-url origin https://seu_token@github.com/seu_usuario/seu_repositorio.git
 
 
-##
+###
 git remote add origin https://liamperfil:seu_token_de_acesso@github.com/liamperfil/seu_repositório
 
 
 ### Configure o Git para usar o token de acesso pessoal:
 git config --global credential.helper store
-** Isso fará com que o Git armazene suas credenciais em cache no arquivo .git-credentials do seu diretório home. Em seguida, você pode adicionar suas credenciais (seu nome de usuário do GitHub e o token de acesso pessoal) manualmente ao arquivo .git-credentials usando um editor de texto: **
+**Isso fará com que o Git armazene suas credenciais em cache no arquivo .git-credentials do seu diretório home. Em seguida, você pode adicionar suas credenciais (seu nome de usuário do GitHub e o token de acesso pessoal) manualmente ao arquivo .git-credentials usando um editor de texto:**
 https://seu_usuario:seu_token_de_acesso@github.com
 
 
-## Crie um Personal Access Token:
+### Crie um Personal Access Token:
 
 1. Acesse o site do GitHub e faça login na sua conta.
 2. Clique na sua foto de perfil no canto superior direito e selecione "Settings" (Configurações).
