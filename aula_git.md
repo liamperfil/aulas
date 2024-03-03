@@ -1,6 +1,6 @@
 # Aula Git
 
-## Instalar o Git:
+### Instalar o Git:
 sudo apt update
 sudo apt install git
 
@@ -44,9 +44,9 @@ git remote set-url origin https://seu_token@github.com/seu_usuario/seu_repositor
 git remote add origin https://liamperfil:seu_token_de_acesso@github.com/liamperfil/seu_repositório
 
 
-## Configure o Git para usar o token de acesso pessoal:
+### Configure o Git para usar o token de acesso pessoal:
 git config --global credential.helper store
-## Isso fará com que o Git armazene suas credenciais em cache no arquivo .git-credentials do seu diretório home. Em seguida, você pode adicionar suas credenciais (seu nome de usuário do GitHub e o token de acesso pessoal) manualmente ao arquivo .git-credentials usando um editor de texto:
+** Isso fará com que o Git armazene suas credenciais em cache no arquivo .git-credentials do seu diretório home. Em seguida, você pode adicionar suas credenciais (seu nome de usuário do GitHub e o token de acesso pessoal) manualmente ao arquivo .git-credentials usando um editor de texto: **
 https://seu_usuario:seu_token_de_acesso@github.com
 
 
