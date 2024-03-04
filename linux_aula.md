@@ -1,17 +1,35 @@
-```sudo apt-get update```
+```
+sudo apt-get update
+```
 
-**Ambiente virtual em projeto python**
-```sudo apt-get install python3-venv```
+Ambiente virtual em projeto python
+```
+sudo apt-get install python3-venv
+```
 
 Criar ambiente venv
-```python3 -m venv venv```
+```
+python3 -m venv venv
+```
 
 Ativar ambiente venv
-```source venv/bin/activate```
+```
+source venv/bin/activate
+```
 
 Desativar
-```deactivate```
+```
+deactivate
+```
 
 Executar um arquivo
-```xdg-open index.html```
+```
+xdg-open index.html
+```
+
+Mover diretorio
+mv origem destino, exemplo:
+```
+sudo mv home/jean/Downloads/estoque /var/www/html
+```
 
