@@ -11,3 +11,7 @@ Ativar ambiente venv
 
 Desativar
 ```deactivate```
+
+Executar um arquivo
+```xdg-open index.html```
+
