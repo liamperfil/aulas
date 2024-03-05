@@ -55,12 +55,24 @@ CREATE DATABASE liamperfil;
 sudo killall mysqld
 
 ### Remove
+```s
 sudo systemctl stop mysql
+```
+```s
 sudo apt purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+```
+```s
 sudo rm -rf /etc/mysql /var/lib/mysql /var/log/mysql
+```
+```s
 sudo rm -rf /var/run/mysqld
+```
+```s
 sudo apt autoremove
+```
+```s
 sudo apt autoclean
+```
 
 
 ### usuario/senha
@@ -72,10 +84,22 @@ phpmyadmin@localhost
 root2
 
 ### Apache2 iniciar, restarte, stop, disable, enable e status
+```
 sudo systemctl start apache2
+```
+```
 sudo systemctl restart apache2
+```
+```
 sudo systemctl stop apache2
+```
+```
 sudo systemctl disable apache2
+```
+```
 sudo systemctl enable apache2
+```
+```
 sudo systemctl status apache2
+```
 
