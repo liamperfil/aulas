@@ -85,8 +85,8 @@ txt = txt.find("lo") # Pesquisa a string por um valor especificado e retorna a p
 ### Para criar um ambiente virtual utilizando venv no Windows, você pode seguir estes passos simples:
 1. Abra o Prompt de Comando/cmd
 2. Navegue até o Diretório do Seu Projeto
-3. Ative o ambiente virtual
-4. Desativar
+3. Ativar o ambiente virtual
+4. Desativar o ambiente virtual
 ```
 cd caminho/do/seu/projeto
 ```
