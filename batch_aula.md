@@ -8,11 +8,11 @@ rem pause
 ### Iniciar ambiente virtual e script
 ```bat
 @echo off
-echo Bem-vindo ao meu arquivo Batch Script!
-call venv\Scripts\activate 
-pause &&
-call python main.py
-rem pause
+title BOT SERVER CONSOLE
+:start
+echo Bem vindo ao comprasnet bot server console
+call venv\Scripts\activate && echo Aperte ENTER para iniciar
+pause >nul && call python main.py
 ```
 ### Instalar modulos
 ```bat
