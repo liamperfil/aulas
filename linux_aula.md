@@ -33,3 +33,20 @@ mv origem destino, exemplo:
 sudo mv home/jean/Downloads/estoque /var/www/html
 ```
 
+### Resetando a senha de seu usuário no WSL
+1. Abra o PowerShell e verifique de qual a distribuição você quer resetar a senha
+```
+wsl -l # lista as distribuições instaladas
+```
+2. Acesse o usuário root da distribuição, por padrão o “root” é o principal
+```
+wsl -d distribution --user root
+# exemplo: 
+$ wsl -d Ubuntu-20.04 --user root
+```
+3. Digite passwd seguido do nome do usuário que você deseja resetar a senha
+```
+passwd username
+# exemplo:
+# passwd exemploUser
+```
