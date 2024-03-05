@@ -8,16 +8,16 @@ sudo mysqld_safe --skip-grant-tables --skip-networking &
 ```s
 mysql -u root
 ```
-```s
+```sql
 USE mysql;
 ```
-```s
+```sql
 UPDATE user SET authentication_string=PASSWORD('Minhasenha10') WHERE User='root';
 ```
-```s
+```sql
 FLUSH PRIVILEGES;
 ```
-```s
+```sql
 EXIT;
 ```
 ### Instalação
