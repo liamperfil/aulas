@@ -91,9 +91,7 @@ sudo apt autoremove
 ```s
 sudo apt autoclean
 ```
-
-
-### usuario/senha
+### Usuario/senha
 super_usuario
 senha
 phpmyadmin
@@ -120,4 +118,3 @@ sudo systemctl enable apache2
 ```s
 sudo systemctl status apache2
 ```
-
