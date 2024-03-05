@@ -42,7 +42,7 @@ wsl -l # lista as distribuições instaladas
 ```
 wsl -d distribution --user root
 # exemplo: 
-$ wsl -d Ubuntu-20.04 --user root
+# wsl -d Ubuntu-20.04 --user root
 ```
 3. Digite passwd seguido do nome do usuário que você deseja resetar a senha
 ```
