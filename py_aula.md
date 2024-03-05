@@ -99,3 +99,16 @@ nome_do_ambiente_virtual\Scripts\activate
 ```
 deactivate
 ```
+
+Instalar módulo, exemplo:
+```
+pip install selenium
+```
+Exibir módulo instalado, exemplo:
+```
+pip show selenium
+```
+Desinstalar módulo:
+```
+pip uninstall selenium
+```
