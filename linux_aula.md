@@ -1,7 +1,11 @@
+Atualizar o apt-get é uma boa pratica
 ```
 sudo apt-get update
 ```
-
+Instalar pip
+```
+sudo apt install python3-pip
+```
 Ambiente virtual em projeto python
 ```
 sudo apt-get install python3-venv

@@ -112,3 +112,6 @@ Desinstalar módulo:
 ```
 pip uninstall selenium
 ```
+```
+pip list
+```
