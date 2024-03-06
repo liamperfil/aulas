@@ -118,3 +118,15 @@ sudo systemctl enable apache2
 ```s
 sudo systemctl status apache2
 ```
+### Iniciar mysql no socket informado
+```s
+sudo mysql --socket=/opt/lampp/var/mysql/mysql.sock -u root -p
+```
+ou
+```s
+sudo mysql --defaults-file=/opt/lampp/etc/my.cnf --socket=/opt/lampp/var/mysql/mysql.sock -u root -p
+```
+### Iniciar o xampp
+```s
+sudo /opt/lampp/lampp start
+```
