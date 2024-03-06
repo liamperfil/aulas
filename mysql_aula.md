@@ -1,25 +1,3 @@
-### Nova senha modo de segurança
-```s
-sudo systemctl stop mysql
-```
-```s
-sudo mysqld_safe --skip-grant-tables --skip-networking &
-```
-```s
-mysql -u root
-```
-```sql
-USE mysql;
-```
-```sql
-UPDATE user SET authentication_string=PASSWORD('Minhasenha10') WHERE User='root';
-```
-```sql
-FLUSH PRIVILEGES;
-```
-```sql
-EXIT;
-```
 ### Instalação
 ```s
 sudo apt update
@@ -45,28 +23,6 @@ sudo mysql -u root
 ```
 ```s
 mysql -u root -p
-```
-```sql
-SHOW DATABASES;
-```
-```s
-quit;
-```
-
-### Criar super usuário
-```sql
-CREATE USER 'super_usuario'@'%' IDENTIFIED BY 'senha';
-GRANT ALL PRIVILEGES ON *.* TO 'super_usuario'@'%' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
-```
-
-### Deletar usuário
-```sql
-DROP USER 'super_usuario'@'localhost';
-```
-### Criar database
-```sql
-CREATE DATABASE liamperfil;
 ```
 ### Stop
 ```s
@@ -129,4 +85,46 @@ sudo mysql --defaults-file=/opt/lampp/etc/my.cnf --socket=/opt/lampp/var/mysql/m
 ### Iniciar o xampp
 ```s
 sudo /opt/lampp/lampp start
+```
+### Criar super usuário
+```sql
+CREATE USER 'super_usuario'@'%' IDENTIFIED BY 'senha';
+GRANT ALL PRIVILEGES ON *.* TO 'super_usuario'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+### Deletar usuário
+```sql
+DROP USER 'super_usuario'@'localhost';
+```
+### Criar database
+```sql
+CREATE DATABASE liamperfil;
+```
+### Nova senha modo de segurança
+```s
+sudo systemctl stop mysql
+```
+```s
+sudo mysqld_safe --skip-grant-tables --skip-networking &
+```
+```s
+mysql -u root
+```
+```sql
+USE mysql;
+```
+```sql
+UPDATE user SET authentication_string=PASSWORD('Minhasenha10') WHERE User='root';
+```
+```sql
+FLUSH PRIVILEGES;
+```
+```sql
+EXIT;
+```
+```sql
+SHOW DATABASES;
+```
+```s
+quit;
 ```
