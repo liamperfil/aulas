@@ -54,3 +54,27 @@ passwd username
 # exemplo:
 # passwd exemploUser
 ```
+
+### Java
+```java
+java -jar nome_do_arquivo.jar
+```
+
+### Configurando .jar em aplicação desktop
+Crie um arquivo .desktop, salve em /usr/share/applications/
+Configure conforme sua necessidade, exemplo:
+portablesigner.desktop
+```
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=java -jar /snap/PortableSigner/PortableSigner.jar
+Name=PortableSigner
+Comment=Assinar documentos PDF
+Icon=/snap/PortableSigner/icon2.png
+```
+Execute o seguinte
+```
+chmod +x portablesigner.desktop
+```
