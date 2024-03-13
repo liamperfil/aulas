@@ -60,7 +60,7 @@ passwd username
 java -jar nome_do_arquivo.jar
 ```
 
-### Configurando .jar em aplicação desktop
+### Configurando em aplicação desktop
 Crie um arquivo .desktop, salve em /usr/share/applications/
 Configure conforme sua necessidade, exemplo:
 portablesigner.desktop
