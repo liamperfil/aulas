@@ -1,3 +1,4 @@
+#python pyautogui_lancar_estoque.py
 #winleft1 -> chrome
 #ctrlleft1 -> planilha NF
 #ctrlleft2 -> www localhost
@@ -5,7 +6,6 @@
 import pyautogui
 import time
 pyautogui.PAUSE = 0.4
-
 
 def rodar():
     i = 16
