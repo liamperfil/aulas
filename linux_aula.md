@@ -78,3 +78,8 @@ Execute o seguinte
 ```
 chmod +x portablesigner.desktop
 ```
+
+### ativar super usuário
+```
+sudo su -
+```
