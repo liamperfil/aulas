@@ -17,6 +17,10 @@ sudo systemctl status mysql
 ```s
 sudo systemctl start mysql
 ```
+### Start XAMPP
+```s
+sudo '/opt/lampp/manager-linux-x64.run'
+```
 ### Conexão
 ```s
 sudo mysql -u root
