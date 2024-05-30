@@ -115,3 +115,14 @@ pip uninstall selenium
 ```
 pip list
 ```
+```py
+while True:
+    try:
+        idade = int(input('Digite sua idade: '))
+        if idade <= 0:
+            print("Por favor, insira um número inteiro positivo.")
+            continue
+        break
+    except ValueError:
+        print("Por favor, insira um valor válido")
+```
