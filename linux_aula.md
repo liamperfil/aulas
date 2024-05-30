@@ -11,6 +11,11 @@ Ambiente virtual em projeto python
 sudo apt-get install python3-venv
 ```
 
+Instalar programa .deb
+```
+sudo dpkg -i nome_do_arquivo.deb
+```
+
 Criar ambiente venv
 ```
 python3 -m venv venv
