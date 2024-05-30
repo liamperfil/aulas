@@ -1,3 +1,8 @@
+### Super admin
+```bat
+Net user administrador /active:no
+```
+cd .. cd nome_diretorio
 ### Iniciar site
 ```bat
 @echo off
