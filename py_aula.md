@@ -91,10 +91,10 @@ txt = txt.find("lo") # Pesquisa a string por um valor especificado e retorna a p
 cd caminho/do/seu/projeto
 ```
 ```
-python -m venv nome_do_ambiente_virtual
+python -m venv ambiente_virtual
 ```
 ```
-nome_do_ambiente_virtual\Scripts\activate
+ambiente_virtual\Scripts\activate
 ```
 ```
 deactivate
