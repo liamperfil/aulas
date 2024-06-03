@@ -4,6 +4,11 @@ cor = '\033[1;33;41m'
 reset = '\033[m'
 print(f'{cor}Olá mundo!{reset} E mais!')
 
+print('\033[1;33;41m Teste... \033[m') # amarelo/vermelho
+print('\033[1;34;40m Teste... \033[m') # azul/preto
+print('\033[7;34;40m Teste... \033[m') # branco/azul
+print('\033[7;35;40m Teste... \033[m') # branco/roxo
+
 # Experimente \033[7m\033[1m 
 # Acima utilizamos 7 para inverter e repete com formatação 1 para negrito
 
@@ -17,5 +22,3 @@ print(f'{cor}Olá mundo!{reset} E mais!')
 # 35/45 roxo
 # 36/46 azul claro
 # 37/47 cinza
-
-# Exemplo: \033[1;33;40m
