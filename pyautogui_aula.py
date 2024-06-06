@@ -13,6 +13,10 @@ print("Olá mundo!")
 pyautogui.PAUSE = 2.5 # tempo antes de cada comando pyautogui
 time.sleep(0.5) # tempo antes do proximo comando
 
+# primeiro entre no prompt e abra o python
+from pyautogui import position
+print(position())
+
 pyautogui.hotkey('winleft', '1') # 
 pyautogui.hotkey('ctrlleft', '1') #
 pyautogui.hotkey('ctrlleft', 'v') #
