@@ -1,4 +1,4 @@
-# 1- navegador modo convidado em tela cheia como primeiro programa da barra
+# 1- navegador modo convidado em tela cheia como primeiro programa da barra: 1 estoque 2 nfe
 # 2- prompt como segundo programa da barra
 # 3- fazer a primeira vez manualmente para reconhecer o certificado antes de executar o programa
 
@@ -14,7 +14,7 @@ pyautogui.PAUSE = 0.4
 
 def rodar():
     pyautogui.hotkey('winleft', '1') #navegador
-    i = 2
+    i = 7
     while (i > 0):
         i -= 1
         pyautogui.hotkey('ctrlleft', '1') # aba 1 planilha
@@ -26,9 +26,12 @@ def rodar():
         pyautogui.hotkey('ctrlleft', 'v') # formulario chave nfe
         
         pyautogui.press('tab', presses=2, interval=0.3)
-        pyautogui.press('enter', presses=3, interval=0.3) # captcha
+        pyautogui.click(x=1035, y=506) # captcha
+        pyautogui.click(x=1035, y=506) # captcha
+        # pyautogui.press('enter', presses=3, interval=0.3) # captcha
         
-        pyautogui.press('tab')
+        #pyautogui.press('tab')
+        pyautogui.press('tab', presses=2, interval=0.3)
         time.sleep(0.6)
         pyautogui.press('enter') # continuar
         time.sleep(0.6)
