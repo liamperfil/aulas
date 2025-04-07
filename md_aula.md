@@ -1,5 +1,5 @@
 # Bem vindo(a) ao meu perfil! 
-## Meu nome é [Liam](https://www.linkedin.com/in/liamperfil/ "Linkedin"), eu sou dev back-end.
+## Meu nome é [Jean Lima](https://www.linkedin.com/in/liamperfil/ "Linkedin"), eu sou dev backend.
 
 - Trabalho: licitações;
 - Estou utilizando python pyautogui e selenium, além de php, sql, javascript, html5, css3;
