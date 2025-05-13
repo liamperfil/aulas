@@ -35,11 +35,13 @@ def normalizar_codigo_barras(texto):
 
 def extrair_data_pagamento(texto, cliente):
     if cliente == "julia":
-        match = re.search(r"(\d{2}/\d{2}/\d{4})\s*data de d[êe]bito", texto, re.IGNORECASE)
+        match = re.search(r"Data de d[eê]bito:\s*(\d{2}/\d{2}/\d{4})", texto, re.IGNORECASE)
+        if not match:
+            match = re.search(r"(\d{2}/\d{2}/\d{4})Data de d[eê]bito", texto, re.IGNORECASE)
         if match:
             return match.group(1)
     else:
-        match = re.search(r"(?:data(?: do pagamento| de d[êe]bito| agendamento| de agendamento| agendamento)[\s:]*)(\d{2}/\d{2}/\d{4})", texto, re.IGNORECASE)
+        match = re.search(r"(?:data(?: do pagamento| de d[eê]bito| agendamento| de agendamento| agendamento)[\s:]*)(\d{2}/\d{2}/\d{4})", texto, re.IGNORECASE)
         if match:
             return match.group(1)
     return None
@@ -47,9 +49,12 @@ def extrair_data_pagamento(texto, cliente):
 def extrair_valor_cobrado(texto, cliente):
     if cliente == "julia":
         padroes_julia = [
-            r"R?\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})\s*valor total",
-            r"R?\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})\s*valor do pagamento",
-            r"R?\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})\s*valor"
+            r"Valor total:\s*R\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})",
+            r"R\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})\s*Valor total",
+            r"R\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})Valor total",
+            r"Valor:\s*R\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})",
+            r"R\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})\s*Valor",
+            r"R\$?\s*(\d{1,3}(?:\.\d{3})*,\d{2})Valor"
         ]
         for padrao in padroes_julia:
             match = re.search(padrao, texto, re.IGNORECASE)
