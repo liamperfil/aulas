@@ -20,11 +20,13 @@ git commit -m "mensagem de commit";
 git pull; # puxar/atualizar local
 git push; # empurrar/enviar
 git push origin main; # empurrar na main
+git push link-do-repositorio main; # empurrar na main
 git branch; # listar branch
 git checkout nome-da-branch; # mudar branch
-git checkout -b "branch de origem" "nome da nova branch" # criar nova branch
-git merge "branch a receber merge" # fazer merge puxando para a ativa
-touch .gitignore
+git checkout -b "branch de origem" "nome da nova branch"; # criar nova branch
+git merge "branch a receber merge"; # fazer merge puxando para a ativa
+touch .gitignore;
+git remote -v; # consultar remote
 ```
 ### Clonando repositório público
 ```
@@ -38,9 +40,10 @@ git clone https://seu_token@github.com/usuario/repositorio.git
 ```
 git remote set-url origin https://seu_token@github.com/seu_usuario/seu_repositorio.git
 ```
-### Obs
+### Adicionar remote
 ```
-git remote add origin https://liamperfil:seu_token_de_acesso@github.com/liamperfil/seu_repositório
+git remote add origin https://usuario:token@github.com/usuario/repositório
+git remote add origin link-do-repositório
 ```
 ### Configure o Git para usar o token de acesso pessoal:
 Isso fará com que o Git armazene suas credenciais em cache no arquivo .git-credentials do seu diretório home. Em seguida, você pode adicionar suas credenciais (seu nome de usuário do GitHub e o token de acesso pessoal) manualmente ao arquivo .git-credentials usando um editor de texto:
