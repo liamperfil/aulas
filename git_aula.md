@@ -27,30 +27,29 @@ git checkout -b "branch de origem" "nome da nova branch"; # criar nova branch
 git merge "branch a receber merge"; # fazer merge puxando para a ativa
 touch .gitignore;
 git remote -v; # consultar remote
+git remote add origin link-do-repositório
+git push --set-upstream origin main # setando a branch
+git clone link-do-repositório # clone repositório público
+git clone https://seu_token@github.com/usuario/repositorio.git # clone repositório privado
 ```
-### Clonando repositório público
-```
-git clone link-do-repositório
-```
-### Clonando repositório privado
-```
-git clone https://seu_token@github.com/usuario/repositorio.git
-```
+
+**Passo a passo**
+ 1. ``git init``
+ 2. ``git add .``
+ 3. ``git commit -m "update";``
+ 4. ``git remote add origin link-do-repositório``
+ 5. ``git push --set-upstream origin main``
+ 6. ``git config --global credential.helper store``
+
 **Se já estiver trabalhando em um repositório existente, altere a URL do repositório remoto usando:**
 ```
 git remote set-url origin https://seu_token@github.com/seu_usuario/seu_repositorio.git
 ```
-### Adicionar remote
-```
-git remote add origin https://usuario:token@github.com/usuario/repositório
-git remote add origin link-do-repositório
-```
 ### Configure o Git para usar o token de acesso pessoal:
 Isso fará com que o Git armazene suas credenciais em cache no arquivo .git-credentials do seu diretório home. Em seguida, você pode adicionar suas credenciais (seu nome de usuário do GitHub e o token de acesso pessoal) manualmente ao arquivo .git-credentials usando um editor de texto:
-```
-git config --global credential.helper store
-```
-https://seu_usuario:seu_token_de_acesso@github.com
+ 1. git config --global credential.helper store
+ 2. em C:\Users\seu_usuario\.git-credentials https://seu_usuario:seu_token_de_acesso@github.com
+
 ### Crie um Personal Access Token:
 1. Acesse o site do GitHub e faça login na sua conta.
 2. Clique na sua foto de perfil no canto superior direito e selecione "Settings" (Configurações).
