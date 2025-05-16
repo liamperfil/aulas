@@ -1,4 +1,4 @@
-# winleft1 -> chrome
+# winleft1 -> navegador
 # ctrlleft1 -> https://docs.google.com/spreadsheets/d/1b2Nr-pdD6nDzkVTzLoq0l9YzGiykN4SCcIdT7X3Eerc/edit#gid=285781729
 # ctrlleft2 -> localhost
 
@@ -9,10 +9,10 @@
 
 import pyautogui
 import time
-pyautogui.PAUSE = 0.4
+pyautogui.PAUSE = 0.3
 
 def rodar():
-    i = 103
+    i = 152
     pyautogui.hotkey('winleft', '1') #chrome
     while (i > 0):
         i = i - 1
