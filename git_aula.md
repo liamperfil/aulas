@@ -1,14 +1,18 @@
 # Aula Git
 
 ### Instalar o Git no linux:
-```
-sudo apt update;
-sudo apt install git;
-```
-```
-git config --global user.name "liamperfil";
-git config --global user.email "jeancarlos.ramos@live.com";
-```
+``sudo apt update;``
+``sudo apt install git;``
+
+**Passo a passo abrindo git**
+ 0. ``git config --global user.name "liamperfil";``
+ 0. ``git config --global user.email "jeancarlos.ramos@live.com";``
+ 1. ``git init``
+ 2. ``git add .``
+ 3. ``git commit -m "update";``
+ 4. ``git remote add origin link-do-repositório``
+ 5. ``git config --global credential.helper store``
+ 6. ``git push --set-upstream origin main``
 
 **Para se comunicar com o repositorio de origem utilizasse pull ou push, quando solicitado login use seu email, quando solicitado a senha use o token.**
 ### Comandos básicos:
@@ -32,14 +36,6 @@ git push --set-upstream origin main # setando a branch
 git clone link-do-repositório # clone repositório público
 git clone https://seu_token@github.com/usuario/repositorio.git # clone repositório privado
 ```
-
-**Passo a passo**
- 1. ``git init``
- 2. ``git add .``
- 3. ``git commit -m "update";``
- 4. ``git remote add origin link-do-repositório``
- 5. ``git push --set-upstream origin main``
- 6. ``git config --global credential.helper store``
 
 **Se já estiver trabalhando em um repositório existente, altere a URL do repositório remoto usando:**
 ```
