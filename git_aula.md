@@ -1,6 +1,6 @@
 # Aula Git
 
-### Instalar o Git:
+### Instalar o Git no linux:
 ```
 sudo apt update;
 sudo apt install git;
@@ -9,30 +9,30 @@ sudo apt install git;
 git config --global user.name "liamperfil";
 git config --global user.email "jeancarlos.ramos@live.com";
 ```
-### Git commit e up, enviar alterações para o GitHub:
-```
-git add .;
-git commit -m "Sua mensagem de commit";
-git push origin main;
-```
-### Atualizar os repositórios locais:
-Navegue até seu repositório/diretório
-```
-git pull origin main
-```
-### Inicialize um repositório Git na pasta local
-Se você ainda não iniciou um repositório Git na sua pasta local, faça isso usando o comando git init:
-Navegue até seu repositório/diretório
-```
-git init
-```
-### Clonando repositório privado
-```
-git clone https://seu_token@github.com/seu_usuario/seu_repositorio.git
+
+**Para se comunicar com o repositorio de origem utilizasse pull ou push, quando solicitado login use seu email, quando solicitado a senha use o token.**
+### Comandos básicos:
+```bash
+git status
+git init # inicializar
+git add .; # adicionar todos
+git commit -m "mensagem de commit";
+git pull; # puxar/atualizar local
+git push; # empurrar/enviar
+git push origin main; # empurrar na main
+git branch; # listar branch
+git checkout nome-da-branch; # mudar branch
+git checkout -b "branch de origem" "nome da nova branch" # criar nova branch
+git merge "branch a receber merge" # fazer merge puxando para a ativa
+touch .gitignore
 ```
 ### Clonando repositório público
 ```
-git clone https://github.com/seu_usuario/seu_repositorio.git
+git clone link-do-repositório
+```
+### Clonando repositório privado
+```
+git clone https://seu_token@github.com/usuario/repositorio.git
 ```
 **Se já estiver trabalhando em um repositório existente, altere a URL do repositório remoto usando:**
 ```
