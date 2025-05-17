@@ -5,14 +5,14 @@
 ``sudo apt install git;``
 
 **Passo a passo abrindo git**
- 0. ``git config --global user.name "liamperfil";``
- 0. ``git config --global user.email "jeancarlos.ramos@live.com";``
- 1. ``git init``
- 2. ``git add .``
- 3. ``git commit -m "update";``
- 4. ``git remote add origin link-do-repositório``
- 5. ``git config --global credential.helper store``
- 6. ``git push --set-upstream origin main``
+ 1. ``git config --global user.name "liamperfil";``
+ 2. ``git config --global user.email "jeancarlos.ramos@live.com";``
+ 3. ``git config --global credential.helper store``
+ 4. ``git init``
+ 5. ``git add .``
+ 6. ``git commit -m "update";``
+ 7. ``git remote add origin link-do-repositório``
+ 8. ``git push --set-upstream origin main``
 
 **Para se comunicar com o repositorio de origem utilizasse pull ou push, quando solicitado login use seu email, quando solicitado a senha use o token.**
 ### Comandos básicos:
