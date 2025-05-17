@@ -1,17 +1,19 @@
 # Aula Git
 
-**Configuração global**
+**Configuração**
  1. ``git config --global user.name "seu_nome";``
  2. ``git config --global user.email "seu_email";``
  3. ``git config --global credential.helper store``
  4. ``git init``
  5. ``git remote add origin link-do-repositório``
+
 **Passo a passo abrindo git push/empurrando**
- 6. ``git add .``
- 7. ``git commit -m "update";``
- 8. ``git push --set-upstream origin main``
+ 1. ``git add .``
+ 2. ``git commit -m "update";``
+ 3. ``git push --set-upstream origin main``
+
 **Passo a passo abrindo git pull/puxando**
- 6. ``git pull --set-upstream origin main``
+ 1. ``git pull --set-upstream origin main``
 
 **Para comunicar com o repositorio de origem utilize pull/push, conforme necessidade, informe seu usuário para login, quando solicitado a senha informe o token.**
 
