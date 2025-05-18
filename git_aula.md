@@ -5,31 +5,49 @@ Este documento cobre os comandos e configurações básicas do Git.
 ## Configuração
 
 1.  **Definir nome de usuário:**
-    ``git config --global user.name "seu_nome"``
+    ```bash
+    git config --global user.name "seu_nome"
+    ```
 2.  **Definir email:**
-    ``git config --global user.email "seu_email"``
+    ```bash
+    git config --global user.email "seu_email"
+    ```
 3.  **Armazenar credenciais (opcional, use com cautela):**
-    ``git config --global credential.helper store``
+    ```bash
+    git config --global credential.helper store
+    ```
 4.  **Inicializar um novo repositório:**
-    ``git init``
+    ```bash
+    git init
+    ```
 5.  **Adicionar o repositório remoto (origin):**
-    ``git remote add origin <link-do-repositório>``
+    ```bash
+    git remote add origin <link-do-repositório>
+    ```
 
 ## Fluxo de Trabalho Básico
 
 ### Git Push (Enviar para o Repositório Remoto)
 
 1.  **Adicionar arquivos modificados à área de staging:**
-    ``git add .``
+    ```bash
+    git add . 
+    ```
 2.  **Criar um commit com uma mensagem descritiva:**
-    ``git commit -m "Mensagem descritiva da alteração"``
+    ```bash
+    git commit -m "Mensagem descritiva da alteração"
+    ```
 3.  **Enviar o commit para o repositório remoto (e definir a branch upstream na primeira vez):**
-    ``git push --set-upstream origin main``
+    ```bash
+    git push --set-upstream origin main
+    ```
 
 ### Git Pull (Receber Atualizações do Repositório Remoto)
 
 1.  **Receber as últimas alterações do repositório remoto (e definir a branch upstream na primeira vez):**
-    ``git pull --set-upstream origin main``
+    ```bash
+    git pull --set-upstream origin main
+    ```
 
 **Nota:** Para interagir com o repositório remoto, use `git pull` para baixar as mudanças e `git push` para enviar suas alterações. Ao usar um token, ele será solicitado ou deverá ser incluído na URL.
 
@@ -68,7 +86,9 @@ git config --system --unset credential.helper # Remover o helper de credenciais 
 ```
 
 ### Alterar a URL de um repositório remoto existente:
+```bash
 git remote set-url origin https://<seu_token>@[github.com/](https://github.com/)<seu_usuario>/<seu_repositorio>.git
+```
 
 ## Configurando um Token de Acesso Pessoal (Personal Access Token - PAT) no GitHub
 
@@ -77,12 +97,12 @@ git remote set-url origin https://<seu_token>@[github.com/](https://github.com/)
 ### Configure o Git para usar o token de acesso pessoal:
 Isso fará com que o Git armazene suas credenciais em cache no arquivo .git-credentials do seu diretório home. Em seguida, você pode adicionar suas credenciais (seu nome de usuário do GitHub e o token de acesso pessoal) manualmente ao arquivo .git-credentials usando um editor de texto:
 1.  **Configurar o Git para armazenar as credenciais:**
- ```bash
- git config --global credential.helper store
- ```
+    ```bash
+    git config --global credential.helper store
+    ```
 2.  **Localização do arquivo de credenciais:** ``C:\Users\<seu_usuario>\.git-credentials``
-3.  **Conteúdo do arquivo** ``.git-credentials`` **(CUIDADO: mantenha este arquivo seguro!):**\
-``https://<seu_usuario>:<seu_token_de_acesso>@github.com``
+3.  **Conteúdo do arquivo** ``.git-credentials`` **(CUIDADO: mantenha este arquivo seguro!):**
+    ``https://<seu_usuario>:<seu_token_de_acesso>@github.com``
 
 ### Criar um Personal Access Token no GitHub
  1. Acesse o site do GitHub e faça login.
