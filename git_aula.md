@@ -4,50 +4,38 @@ Este documento cobre os comandos e configurações básicas do Git.
 
 ## Configuração
 
-1.  **Definir nome de usuário:**
-    ```bash
-    git config --global user.name "seu_nome"
-    ```
-2.  **Definir email:**
-    ```bash
-    git config --global user.email "seu_email"
-    ```
-3.  **Armazenar credenciais (opcional, use com cautela):**
-    ```bash
-    git config --global credential.helper store
-    ```
-4.  **Inicializar um novo repositório:**
-    ```bash
-    git init
-    ```
-5.  **Adicionar o repositório remoto (origin):**
-    ```bash
-    git remote add origin <link-do-repositório>
-    ```
+1. **Definir nome de usuário:**
+2. **Definir email:**
+3. **Armazenar credenciais (opcional, use com cautela):**
+4. **Inicializar um novo repositório:**
+5. **Adicionar o repositório remoto (origin):**
+```bash
+git config --global user.name "seu_nome"
+git config --global user.email "seu_email"
+git config --global credential.helper store
+git init
+git remote add origin <link-do-repositório>
+```
 
 ## Fluxo de Trabalho Básico
 
 ### Git Push (Enviar para o Repositório Remoto)
 
-1.  **Adicionar arquivos modificados à área de staging:**
-    ```bash
-    git add . 
-    ```
-2.  **Criar um commit com uma mensagem descritiva:**
-    ```bash
-    git commit -m "Mensagem descritiva da alteração"
-    ```
-3.  **Enviar o commit para o repositório remoto (e definir a branch upstream na primeira vez):**
-    ```bash
-    git push --set-upstream origin main
-    ```
+1. **Adicionar arquivos modificados à área de staging:**
+2. **Criar um commit com uma mensagem descritiva:**
+3. **Enviar o commit para o repositório remoto (e definir a branch upstream na primeira vez):**
+```bash
+git add . 
+git commit -m "Mensagem descritiva da alteração"
+git push --set-upstream origin main
+```
 
 ### Git Pull (Receber Atualizações do Repositório Remoto)
 
-1.  **Receber as últimas alterações do repositório remoto (e definir a branch upstream na primeira vez):**
-    ```bash
-    git pull --set-upstream origin main
-    ```
+1. **Receber as últimas alterações do repositório remoto (e definir a branch upstream na primeira vez):**
+```bash
+git pull --set-upstream origin main
+```
 
 **Nota:** Para interagir com o repositório remoto, use `git pull` para baixar as mudanças e `git push` para enviar suas alterações. Ao usar um token, ele será solicitado ou deverá ser incluído na URL.
 
