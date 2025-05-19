@@ -2,29 +2,29 @@
 
 Este documento cobre os comandos e configurações básicas do Git.
 
-## Configuração
+## Configuração global
 
 1. **Definir nome de usuário:**
 2. **Definir email:**
 3. **Armazenar credenciais (opcional, use com cautela):**
-4. **Inicializar um novo repositório:**
-5. **Adicionar o repositório remoto (origin):**
 ```bash
 git config --global user.name "seu_nome"
 git config --global user.email "seu_email"
 git config --global credential.helper store
-git init
-git remote add origin <link-do-repositório>
 ```
 
 ## Fluxo de Trabalho Básico
 
 ### Git Push (Enviar para o Repositório Remoto)
 
-1. **Adicionar arquivos modificados à área de staging:**
-2. **Criar um commit com uma mensagem descritiva:**
-3. **Enviar o commit para o repositório remoto (e definir a branch upstream na primeira vez):**
+1. **Inicializar um novo repositório:**
+2. **Adicionar o repositório remoto (origin):**
+3. **Adicionar arquivos modificados à área de staging:**
+4. **Criar um commit com uma mensagem descritiva:**
+5. **Enviar o commit para o repositório remoto (e definir a branch upstream na primeira vez):**
 ```bash
+git init
+git remote add origin <link-do-repositório>
 git add . 
 git commit -m "Mensagem descritiva da alteração"
 git push --set-upstream origin main
@@ -32,12 +32,14 @@ git push --set-upstream origin main
 
 ### Git Pull (Receber Atualizações do Repositório Remoto)
 
-1. **Receber as últimas alterações do repositório remoto (e definir a branch upstream na primeira vez):**
+1. **Inicializar um novo repositório:**
+2. **Adicionar o repositório remoto (origin):**
+3. **Receber as últimas alterações do repositório remoto (e definir a branch upstream na primeira vez):**
 ```bash
+git init
+git remote add origin <link-do-repositório>
 git pull --set-upstream origin main
 ```
-
-**Nota:** Para interagir com o repositório remoto, use `git pull` para baixar as mudanças e `git push` para enviar suas alterações. Ao usar um token, ele será solicitado ou deverá ser incluído na URL.
 
 ## Comandos Básicos do Git
 
