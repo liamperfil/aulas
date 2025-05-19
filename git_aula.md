@@ -55,6 +55,8 @@ git pull       # Baixar e mesclar as alterações do repositório remoto
 git push       # Enviar as alterações para o repositório remoto
 git remote add origin <link-do-repositório> # Adicionar um repositório remoto
 git remote -v  # Listar os repositórios remotos
+git reflog
+git reset --hard <codigo reflog>
 
 git push --set-upstream origin main # Enviar e configurar a branch upstream
 git pull --set-upstream origin main # Baixar e configurar a branch upstream
