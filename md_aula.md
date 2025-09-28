@@ -55,6 +55,11 @@ Markdown é uma linguagem de marcação leve usada para formatar texto de forma 
 | Alinhado    | Alinhado    | Alinhado    |
 | Texto       | Texto       | Texto       |
 
+- Modelo de tabela para copiar e colar:
+||
+|:-|
+||
+
 <img src="https://komarev.com/ghpvc/?username=liamperfil&label=Profile%20views&color=0e75b6&style=flat" alt="liamperfil" />
 
 [legenda](endereço da img)
